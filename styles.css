@@ -27,6 +27,7 @@ section {
 
 .container {
   padding: 50px 0;
+  width: 100%;
 }
 
 .row {
@@ -255,4 +256,33 @@ section__title {
 
 .project__description--para {
   margin: 16px 0;
+}
+
+/* Footer */
+
+footer {
+  background-color: #242424;
+  display: flex;
+}
+
+.footer__row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__logo--img {
+  width: 70px;
+}
+
+.footer__social--links {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  justify-content: space-around;
+  margin: 32px 0;
+}
+
+.footer__social--link, .footer__copyright {
+  color: white;
 }
