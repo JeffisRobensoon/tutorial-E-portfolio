@@ -15,8 +15,8 @@ function contact (event) {
      event.target,
     'user_0E1V5nQadaj1wjUzU'
    ).then(() => {
-      loading.classList.remove("modal__overlay--visible")
-    success.classList += " modal__overlay--success"
+    loading.classList.remove("modal__overlay--visible");
+    success.classList += " modal__overlay--visible"
   }).catch(() => {
     loading.classList.remove("modal__overlay--visible")
     alert(
