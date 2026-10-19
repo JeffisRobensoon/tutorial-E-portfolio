@@ -5,7 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jeffrey Robinson</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="index.js"></script>
   <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@5/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "0E1V5nQadaj1wjUzU",
+      });
+   })();
+</script>
 </head>
 <body>
   <section id="landing-page">
@@ -107,14 +118,14 @@
           <h3 class="modal__sub-title modal__sub-title--contact">
             I'm currently open to new opportunities.
           </h3>
-          <form id="contact__form" action="">
+          <form id="contact__form" onsubmit="contact(event)">
             <div class="form__item">
               <label class="form__item--label" >Name</label>
-              <input class="input" name="user__name" type="text" required>
+              <input class="input" name="user_name" type="text" required>
             </div>
             <div class="form__item">
               <label class="form__item--label" >Email</label>
-              <input class="input" name="user__email" type="email" required>
+              <input class="input" name="user_email" type="email" required>
             </div>
             <div class="form__item">
               <label class="form__item--label" >Message</label>
